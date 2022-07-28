@@ -1,0 +1,23 @@
+from selenium import webdriver
+import time
+from selenium.webdriver.common.keys import Keys
+driver=webdriver.Chrome(executable_path=r"C:\Users\pavan\Documents\chromedriver.exe")
+driver.get("https://ajayirkal23.github.io/ST-IA-Assignment--1/")
+driver.find_element("name","fname").send_keys("Ajay")
+time.sleep(2)
+driver.find_element("name","lname").send_keys("Irkal")
+time.sleep(2)
+driver.find_element("name","email").send_keys("Ajayirkal@gmail.com")
+time.sleep(2)
+driver.find_element("name","num").send_keys("9538513924")
+time.sleep(2)
+driver.find_element("name","advjava").send_keys("Advance Java")
+time.sleep(1)
+driver.find_element("name","stesting").send_keys("Software Testing")
+time.sleep(1)
+driver.find_element("name","comnet").send_keys("Computer Network")
+time.sleep(1)
+driver.find_element("name","submit").send_keys(Keys.ENTER)
+time.sleep(1)
+driver.close()
+print("Ajay Irkal")

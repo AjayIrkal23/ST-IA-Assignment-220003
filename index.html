@@ -15,20 +15,24 @@
         <h1>Registration Form</h1>
         <form action="">
             <div class="form-control">
-                <input type="text" required>
+                <input type="text" name="fname" required>
                 <label for="">First Name</label>
             </div>
             <div class="form-control">
-                <input type="text" required>
+                <input type="text" name="lname" required>
                 <label for="">Last Name</label>
             </div>
             <div class="form-control">
-                <input type="text" required>
+                <input type="text" name="semester" required>
                 <label for="">Semester</label>
             </div>
             <div class="form-control">
-                <input type="text" required>
+                <input type="text" name="num" required>
                 <label for="">Phone Number</label>
+            </div>
+            <div class="form-control">
+                <input type="text" name="email" required>
+                <label for="">Email Address</label>
             </div>
             <div class="form-control">
                 <input type="text" required>
@@ -36,15 +40,15 @@
             </div>
             <div class="form-control">
                 <p style="font-size: 21px;">Subjects</p>
-                <input type="checkbox" style="display: inline-block;width: auto;" required> <span>Software Testing</span><br>
-                <input type="checkbox" style="display: inline-block;width: auto;" required> <span>Advance Java</span><br>
-                <input type="checkbox" style="display: inline-block;width: auto;" required> <span>Cloud Computing</span><br>
-                <input type="checkbox" style="display: inline-block;width: auto;" required> <span>Computer Network</span><br>
-                <input type="checkbox" style="display: inline-block;width: auto;" required> <span>Computer Network</span><br>
+                <input type="checkbox" style="display: inline-block;width: auto;" name="stesting" required> <span>Software Testing</span><br>
+                <input type="checkbox" style="display: inline-block;width: auto;" name="advjava" required> <span>Advance Java</span><br>
+                <input type="checkbox" style="display: inline-block;width: auto;" name="cloudcom" required> <span>Cloud Computing</span><br>
+                <input type="checkbox" style="display: inline-block;width: auto;" name="comnet" required> <span>Computer Network</span><br>
+                <input type="checkbox" style="display: inline-block;width: auto;" name="ds" required> <span>Data Structure</span><br>
 
 
             </div>
-            <button class="btn">Submit</button>
+            <button name="submit" class="btn">Submit</button>
             <p class="text">Dont Have An Account
                 <a href="#">Register</a></p>
         </form>
