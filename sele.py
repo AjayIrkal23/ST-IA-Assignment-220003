@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
 driver=webdriver.Chrome(executable_path=r"C:\Users\pavan\Documents\chromedriver.exe")
-driver.get("https://ajayirkal23.github.io/ST-IA-Assignment--1/")
+driver.get("https://ajayirkal23.github.io/ST-IA-Assignment-220003/")
 driver.find_element("name","fname").send_keys("Ajay")
 time.sleep(2)
 driver.find_element("name","lname").send_keys("Irkal")
